@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "014a8cbe-ff2d-4051-ae18-e952fc45302a",
+		"name": "Evaluate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27176630",
+		"_collection_link": "https://restless-zodiac-218908.postman.co/workspace/Team-Workspace~8b4850eb-6f2a-4237-8d9b-9d3fcd2cde68/collection/27176630-014a8cbe-ff2d-4051-ae18-e952fc45302a?action=share&creator=27176630&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "member",
+			"item": [
+				{
+					"name": "get all members",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/member",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "member borrow",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/member/borrowed",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"member",
+								"borrowed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrow",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"aaaaaaaaaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/member/borrow/6469d1b9f7dc029303fd0a1b",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"member",
+								"borrow",
+								"6469d1b9f7dc029303fd0a1b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"aaaaaaaaaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/member/return/6469d1b9f7dc029303fd0a1b",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"member",
+								"return",
+								"6469d1b9f7dc029303fd0a1b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "add books",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"aaaaaaaaaaa\",    \r\n    \"auther\":\"ali\",\r\n    \"pages\":\"50\",\r\n    \"noOfCopies\":\"5\",\r\n    \"shelfNo\":\"4\",\r\n    \"member\":[]\r\n    \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all books",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8082/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get book by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/book/title/aaaaaaaaaaa",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"book",
+								"title",
+								"aaaaaaaaaaa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get book by auther",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/book/auther/ali",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"book",
+								"auther",
+								"ali"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get book by member",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjljZmI2Mjc2Njg2MmRjZTg4YjM5NCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjg0NjU2NTY1LCJleHAiOjE2ODQ5MTU3NjV9.xXuWqWVMZPiw2kYBy-s68ufzBxM_GVj3hqKJAVijeX4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/book/6469d8531c07f228fc09c51c",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"book",
+								"6469d8531c07f228fc09c51c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "available books",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODQ2NTY1NzMsImV4cCI6MTY4NDkxNTc3M30.ZropFVgE0VzkYQ6nE8gAGx636P4IpwwkhvF05DwEoks",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/book/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"book",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"ahmed\",\r\n        \"email\":\"ahmedd@gmail.com\",\r\n    \"password\":\"ABCDefg12@@5@63\",\r\n    \"book\":[\"6469d3fcf9830eb9cdf105a9\"]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjljZmI2Mjc2Njg2MmRjZTg4YjM5NCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjg0NjU2MzEwLCJleHAiOjE2ODQ5MTU1MTB9.HUc27G3ujTKRdr-187MM1vQF1tFk9qAx0TXekhdzXHQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\":\"admin@a.a\",\r\n    \"password\":\"12345\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/login/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"login",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \"email\":\"mahmoud@gmail.com\",\r\n    \"password\":\"ABCDefg12563\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/login/member",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"login",
+						"member"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
